@@ -58,6 +58,18 @@
 
 <br>
 
+
+## Pagespeed Insights Score:
+
+- | Scored 100% for Both Mobile & Desktop |
+  | :-----: |
+  | <img src='https://github.com/0xabdulkhalid/profile-card-component/blob/main/images/pagespeed-insights-score.webp' alt='100% scored on pagespeed insights'> |
+  |  |
+  | Check out [**Pagespeed Insights**](https://pagespeed.web.dev/analysis/https-0xabdulkhalid-github-io-faq-accordion-card/c7lfd2qg4h?form_factor=mobile) to get live score |
+  |||
+
+<br>
+
 ## The challenge
 
 - The challenge is to build out this FAQ accordion card and get it looking as close to the design as possible.
