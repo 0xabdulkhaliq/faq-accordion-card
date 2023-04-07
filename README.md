@@ -51,7 +51,7 @@
 
 - |||
   | :----- | :----- |
-  | Solution URL: | [🎯](#) |
+  | Solution URL: | [FAQ Accordion Card 🎯 [ USING DETAIL SUMMARY - VANILLA CSS3 - BEM ]](https://www.frontendmentor.io/solutions/faq-accordion-card-using-detail-summary-vanilla-css3-bem-PfVhpYym1r) |
   | Live Site URL: | [https://0xabdulkhalid.github.io/faq-accordion-card/](https://0xabdulkhalid.github.io/faq-accordion-card/) |
   |||
 
