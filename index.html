@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FAQ Accordion Card Solution by 0xabdulkhalid for FrontendMentor.io"/>
+  <meta name="keywords" content="Frontend Mentor, FAQ Accordion Card Challenge, 0xabdulkhalid"/>
+  <meta property="og:title" content="FAQ Accordion Card - Frontend Mentor" />
+  <meta property="og:description" content="FAQ Accordion Card Solution by 0xabdulkhalid for FrontendMentor.io"/>
+  <meta name="theme-color" content="#B77EEC" />
+  <meta name="msapplication-navbutton-color" content="#B77EEC" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#B77EEC" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+  <link rel="manifest" href="./images/site.webmanifest" />
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <main class="fade-in-animation">
+    <div class="main__illustration"></div>
+
+    <div class="main__faq-section">
+      <h1 class="main__heading">
+        <abbr title="Frequently Asked Questions" aria-label="Frequently Asked Questions">FAQ</abbr>
+      </h1>
+      
+      <details class="main__faq-block">
+        <summary class="main__question">How many team members can I invite?</summary>
+        
+        <p class="main__answer">
+          You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.
+        </p>
+      </details>
+
+      <details class="main__faq-block" open="">
+        <summary class="main__question">What is the maximum file upload size?</summary>
+        
+        <p class="main__answer">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </p>
+      </details>
+
+      <details class="main__faq-block">
+        <summary class="main__question">How do I reset my password?</summary>
+        
+        <p class="main__answer">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+        </p>
+      </details>
+
+      <details class="main__faq-block">
+        <summary class="main__question">Can I cancel my subscription?</summary>
+        
+        <p class="main__answer">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </p>
+      </details>
+
+      <details class="main__faq-block">
+        <summary class="main__question">Do you provide additional support?</summary>
+        
+        <p class="main__answer">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </details>
+
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by
+    <a class="attribution__link" href="https://www.frontendmentor.io/" target="_blank" aria-describedby="Frontend Mentor Website">Frontend Mentor</a>, Coded by
+    <a class="attribution__link" href="https://github.com/0xabdulkhalid" target="_blank" rel="noopener noreferrer" aria-describedby="Abdul khalid's Github profile">0xabdulkhalid</a>
+  </footer>
+
+  <script defer>
+      const dropDownElements = document.querySelectorAll('.main__question');
+
+      dropDownElements.forEach((el)=>{
+          el.addEventListener('click', (e)=>{
+            if (e.target.parentElement.open == true) return e.target.parentElement = false
+
+            dropDownElements.forEach(element => element.parentElement.open = false)
+
+            e.target.parentElement.open = false
+          })
+      })
+  </script>
+</body>
+</html>
