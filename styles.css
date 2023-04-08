@@ -20,10 +20,9 @@
 */
 @font-face {
   font-family: 'KumbhSans';
-  src:  url('./fonts/KumbhSans.woff') format('woff')
-       ,url('./fonts/KumbhSans.woff2') format('woff2');
-    font-weight: 1 999;
-    font-display: swap;
+  src:  url('./fonts/KumbhSans.woff') format('woff'), url('./fonts/KumbhSans.woff2') format('woff2');
+  font-weight: 1 999;
+  font-display: swap;
 }
 
 /*
@@ -159,9 +158,20 @@ details[open] summary ~ * {
     right: .2em;
 } 
 
-summary:focus-visible {
- outline:.15em dotted #111;
- outline-offset:.4em
+button,
+textarea,
+input,
+select,
+a,
+details,
+summary{
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: transparent;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+  user-select: none;
 }
 
 .main__question {
@@ -354,6 +364,11 @@ summary:focus-visible {
         font-size: .757rem;
         line-height: 1.5em;
         margin-left: -.1em;
+    }
+
+    summary:focus-visible {
+        outline:.15em dotted #111;
+        outline-offset:.4em
     }
 
     .attribution a:hover {
